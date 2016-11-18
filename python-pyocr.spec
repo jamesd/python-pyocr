@@ -11,13 +11,13 @@
 %endif
 
 Name:           python-%{prjname}
-Version:        0.4.1
+Version:        0.4.2
 Release:        1%{?dist}
 Summary:        An optical character recognition (OCR) tool wrapper for python
 
 License:        gplv3+
 URL:            https://github.com/jflesch/%{prjname}
-Source0:        https://github.com/jflesch/%{prjname}/archive/%{version}/%{name}-%{version}.tar.gz
+Source0:        https://github.com/jflesch/%{prjname}/archive/%{version}/%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  python2-devel
@@ -48,7 +48,7 @@ data.
 Summary:        %{summary}
 
 %description -n python3-%{prjname}
-%{description}
+%{summary}
 
 %endif # with python3
 
@@ -116,5 +116,8 @@ popd
 
 
 %changelog
+* Fri Nov 18 2016 James Davidson <james@greycastle.net> - 0.4.2-1
+- Update to 0.4.2
+
 * Sun Aug 28 2016 James Davidson <james@greycastle.net>
 - Initial packaging
