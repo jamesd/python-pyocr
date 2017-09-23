@@ -11,7 +11,7 @@
 %endif
 
 Name:           python-%{prjname}
-Version:        0.4.2
+Version:        0.4.7
 Release:        1%{?dist}
 Summary:        An optical character recognition (OCR) tool wrapper for python
 
@@ -116,6 +116,9 @@ popd
 
 
 %changelog
+* Sat Sep 23 2017 James Davidson <james@greycastle.net> - 0.4.7-1
+- Update to upstream release 0.4.7
+
 * Fri Nov 18 2016 James Davidson <james@greycastle.net> - 0.4.2-1
 - Update to 0.4.2
 
